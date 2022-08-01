@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <header>
+        <h1 class="header-element">Etch-a-Sketch!!!</h1>
+    </header>
+
+    <main class ="main">
+        <div class="grid">
+        </div>
+        <div class="settings">
+            <button onclick= "changeColor('black')">Black</button>
+            <button onclick= "changeColor('blue')">Blue</button>
+            <button onclick= "changeColor('rainbow')">Rainbow</button>
+            <button onclick= "changeColor('white')">Erase</button>
+            <button onclick= "resetGrid()">reset</button>
+        </div>
+    <div>
+        <label for="sizeRange" id="sizeLabel"></label>
+        <input type="range" min = "4" max = "100" value="15" id="sizeRange" class="slider" onchange="changeSize(this.value)"/>
+
+    </div>
+    </main>
+    
+    <footer id="footer"></footer>
+</body>
+<script src="myScript.js"></script>
+</html>
